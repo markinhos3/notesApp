@@ -30,7 +30,7 @@ public class NotesListActivity extends AppCompatActivity {
 
         if (id == R.id.menu_main_action_add_note) {
 
-            Intent i = new Intent(NotesListActivity.this,NotesListActivity.class);
+            Intent i = new Intent(NotesListActivity.this,NoteDetailActivity.class);
             startActivity(i);
 
             return true;
