@@ -8,6 +8,7 @@ import java.util.List;
 public class Notes implements Enumerable<Note>{ // con alt+ins le meto los métodos CONFIGURADOS COMO  PLANTILLAS -> donde había una T lo cambia por lo que le pase a Enumerable<>
 
 
+
     // CREO UNA LISTA DE NOTAS privada - la llamo noteList
     private List<Note> noteList = new LinkedList<>(); // le creamos un nuevo LinkedList (podríamos usar tb ArrayList)
 
@@ -38,6 +39,11 @@ public class Notes implements Enumerable<Note>{ // con alt+ins le meto los méto
     @Override
     public List<Note> getAll() {
         return noteList; // retorna tod
+    }
+
+    // para que me devuelva un elemento en concreto
+    public Note get(int i){
+        return noteList.get(i);
     }
 
 }
