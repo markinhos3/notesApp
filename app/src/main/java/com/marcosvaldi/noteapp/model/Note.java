@@ -3,13 +3,21 @@ package com.marcosvaldi.noteapp.model;
 // CLASE: LO HEMOS CREADO con la EXTENSIÓN .model y por eso está dentro de un model
 
 
-public class Note {
+import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
+
+public class Note extends RealmObject{ // tengo que extenderlo de Realm para grabar en Realm
 
     //vbles: datos privados para tenerlos controlados
 
-    private String title;
+   @PrimaryKey private String title; // clave primaria para Realm
     private String text;
     private long color;
+
+    // constructor vacío para Realm
+    public Note(){
+
+    }
 
     //creo un CONSTRUCTOR al que le paso un título
     public Note (String title){
