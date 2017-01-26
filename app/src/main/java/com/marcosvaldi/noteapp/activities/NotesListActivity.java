@@ -1,4 +1,4 @@
-package com.marcosvaldi.noteapp;
+package com.marcosvaldi.noteapp.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.marcosvaldi.noteapp.R;
+import com.marcosvaldi.noteapp.adapters.NoteAdapter;
+import com.marcosvaldi.noteapp.fragments.NoteListFragment;
 import com.marcosvaldi.noteapp.model.Note;
 import com.marcosvaldi.noteapp.model.Notes;
 
@@ -61,6 +64,4 @@ public class NotesListActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-
 }

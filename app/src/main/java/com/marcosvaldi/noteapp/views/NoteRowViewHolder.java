@@ -1,10 +1,11 @@
-package com.marcosvaldi.noteapp;
+package com.marcosvaldi.noteapp.views;
 
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
+import com.marcosvaldi.noteapp.R;
 import com.marcosvaldi.noteapp.model.Note;
 
 public class NoteRowViewHolder extends RecyclerView.ViewHolder{

@@ -1,4 +1,4 @@
-package com.marcosvaldi.noteapp;
+package com.marcosvaldi.noteapp.fragments;
 
 
 import android.content.SharedPreferences;
@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+
+import com.marcosvaldi.noteapp.R;
 
 
 /**

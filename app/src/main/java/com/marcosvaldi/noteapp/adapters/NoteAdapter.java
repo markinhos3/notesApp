@@ -1,4 +1,4 @@
-package com.marcosvaldi.noteapp;
+package com.marcosvaldi.noteapp.adapters;
 
 
 import android.content.Context;
@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.marcosvaldi.noteapp.views.NoteRowViewHolder;
+import com.marcosvaldi.noteapp.R;
 import com.marcosvaldi.noteapp.model.Note;
 import com.marcosvaldi.noteapp.model.Notes;
 
