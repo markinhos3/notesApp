@@ -3,10 +3,12 @@ package com.marcosvaldi.noteapp.model;
 // CLASE: LO HEMOS CREADO con la EXTENSIÓN .model y por eso está dentro de un model
 
 
+import java.io.Serializable;
+
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
-public class Note extends RealmObject{ // tengo que extenderlo de Realm para grabar en Realm
+public class Note extends RealmObject implements Serializable{ // tengo que extenderlo de Realm para grabar en Realm e implementar de Serializable para usar la Note como serializable
 
     //vbles: datos privados para tenerlos controlados
 

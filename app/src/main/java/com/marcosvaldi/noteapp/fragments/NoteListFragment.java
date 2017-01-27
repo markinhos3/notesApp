@@ -21,11 +21,9 @@ public class NoteListFragment extends Fragment {
     //para OBTENER EL ACCESO AL RECYCLERVIEW
     private RecyclerView recyclerNotesView;
 
-
     public NoteListFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

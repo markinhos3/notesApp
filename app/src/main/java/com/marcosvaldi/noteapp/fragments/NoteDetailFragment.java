@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 import com.marcosvaldi.noteapp.R;
+import com.marcosvaldi.noteapp.model.Note;
 
 
 /**
@@ -121,4 +122,16 @@ public class NoteDetailFragment extends Fragment {
 
     }
 
+    //para que el fragmento esté preparado a ser visto desde fuera
+    public Note getNote() {
+        //lo que tiene que devolver
+        Note note = new Note();
+        // lo que haya escrito la persona en el título
+        note.setTitle(titleText.getText().toString());
+        // lo que haya escrito la persona en la descripvión
+        note.setText(descriptionText.getText().toString());
+
+        // y al final devuelvo la nota
+        return note;
+    }
 }

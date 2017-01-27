@@ -40,7 +40,6 @@ public class NotesListActivity extends AppCompatActivity {
 
         }*/
 
-
         // llamo a cargar Realm
         loadFromRealm();
 
@@ -52,8 +51,6 @@ public class NotesListActivity extends AppCompatActivity {
     }
 
     // necesito crear mi método onPause
-
-
     @Override
     protected void onPause() {
         super.onPause();
@@ -119,7 +116,6 @@ public class NotesListActivity extends AppCompatActivity {
 
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -133,7 +129,7 @@ public class NotesListActivity extends AppCompatActivity {
             final Note newNote = (Note) data.getSerializableExtra("NewNote"); // RealmObject es Serializable, y tb hay que castearlo con alt+intro
 
             // AÑADIRLO A LA BASE DE DATOS
-             Realm realm = Realm.getDefaultInstance();
+            Realm realm = Realm.getDefaultInstance();
             realm.executeTransaction(new Realm.Transaction() { // otra forma de hacer la transacción y nos evita el begin y el commit
                 @Override
                 public void execute(Realm realm) {
