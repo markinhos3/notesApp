@@ -3,7 +3,7 @@ package com.marcosvaldi.noteapp.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,7 +34,7 @@ public class NoteListFragment extends Fragment {
         recyclerNotesView = (RecyclerView) view.findViewById(R.id.fragment_note_list_note_list);
 
         //hay que indicarle la forma en qué pintarlo (lista,grid,...); hay que pasarle un ayoutManager
-        recyclerNotesView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerNotesView.setLayoutManager(new GridLayoutManager(getContext(),2)); // creo un el Layout a GRID con 2 columnas
         return view;
     }
 
